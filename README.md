@@ -89,8 +89,8 @@ See [Releases page](https://github.com/azu/sudashi-synonyms-dictionary/releases)
 
 This repository has semi-automatic release flow:
 
-- [cron-update-dictionary.yml]: If sudachi's dictionary is updated, submit Pull Request
-- [release.yml]: If [sudashi-synonyms-dictionary.json](sudashi-synonyms-dictionary.json) is updated, publish new version to npm
+- [cron-update-dictionary.yml](.github/workflows/cron-update-dictionary.yml): If sudachi's dictionary is updated, submit Pull Request
+- [release.yml](.github/workflows/release.yml): If [sudashi-synonyms-dictionary.json](sudashi-synonyms-dictionary.json) is updated, publish new version to npm
 
 ## Running tests
 
