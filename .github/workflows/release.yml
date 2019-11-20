@@ -26,7 +26,7 @@ jobs:
           yarn install
       - name: test
         run: npm run test
-      - name: check version and add tag
+      - name: Publish
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
