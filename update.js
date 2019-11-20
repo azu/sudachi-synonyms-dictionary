@@ -10,7 +10,7 @@ const DICT_URL = "https://raw.githubusercontent.com/WorksApplications/SudachiDic
     const dictText = await fetch(DICT_URL).then(res => res.text());
     const json = parse(dictText);
     const prevJSON = JSON.parse(fs.readFileSync(OUTPUT_PATH, "utf-8"));
-    if (util.isDeepStrictEqual(json, prevJSON)) {
+    if (util.isDeepStrictEqual(JSON.parse(JSON.stringify(json)), prevJSON)) {
         return;
     }
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(json), "utf-8");
