@@ -4,7 +4,7 @@
 # depended on https://github.com/azu/can-npm-publish
 can-npm-publish --verbose
 if [ $? -eq 1 ] ; then
-  exit 0 # exit normally
+  exit 255
 fi
 
 # get current version from package.json
