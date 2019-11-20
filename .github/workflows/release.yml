@@ -26,11 +26,8 @@ jobs:
       - name: check version and add tag
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           REPO: ${{github.repository}}
           COMMIT: ${{github.sha}}
         run: ./release.sh
-      - name: release
-        run: npm publish
-        if: success()
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+

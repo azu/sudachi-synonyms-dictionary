@@ -4,7 +4,8 @@
 # depended on https://github.com/azu/can-npm-publish
 can-npm-publish --verbose
 if [ $? -eq 1 ] ; then
-  exit 255
+  echo "Skip Release"
+  exit 0;
 fi
 
 # get current version from package.json
@@ -22,3 +23,5 @@ curl -s -X POST $API_URL \
   "sha": "${COMMIT}"
 }
 EOS
+# release
+npm publish
