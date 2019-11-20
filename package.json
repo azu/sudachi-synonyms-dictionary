@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "node-fetch": "^2.6.0",
+    "semver": "^6.3.0",
     "sudashi-synonyms-parser": "^1.0.1"
   }
 }
