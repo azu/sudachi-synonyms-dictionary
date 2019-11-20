@@ -1,4 +1,4 @@
-name: Create Pull Request
+name: Update Dictionary
 on:
   schedule:
     - cron:  '*/15 * * * *'
