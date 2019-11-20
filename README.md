@@ -85,6 +85,13 @@ For more details, see [sudashi-synonyms-parser](https://github.com/azu/sudashi-s
 
 See [Releases page](https://github.com/azu/sudashi-synonyms-dictionary/releases).
 
+## Release Flow
+
+This repository has semi-automatic release flow:
+
+- [cron-update-dictionary.yml]: If sudachi's dictionary is updated, submit Pull Request
+- [release.yml]: If [sudashi-synonyms-dictionary.json](sudashi-synonyms-dictionary.json) is updated, publish new version to npm
+
 ## Running tests
 
 Install devDependencies and Run `npm test`:
