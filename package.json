@@ -33,6 +33,6 @@
     "semver": "^6.3.0"
   },
   "dependencies": {
-    "sudashi-synonyms-parser": "1.0.2"
+    "sudachi-synonyms-parser": "^1.0.3"
   }
 }
