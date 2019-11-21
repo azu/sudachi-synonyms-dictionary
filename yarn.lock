@@ -22,10 +22,10 @@ semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-sudashi-synonyms-parser@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/sudashi-synonyms-parser/-/sudashi-synonyms-parser-1.0.1.tgz#ac9f901d28ee2e2a6450744f6e14f8bb3df6f406"
-  integrity sha512-qH6DZLeU4ZpBfPSlHaeL1a8PEELKbUtbEW8wY+T4pZKWegVFU3Q1yZwU5bzln3p1gza2UYpR8w2qxuO14yglIA==
+sudashi-synonyms-parser@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/sudashi-synonyms-parser/-/sudashi-synonyms-parser-1.0.2.tgz#2f301fa20ba65c00ae0482dd9d5ea24652cf4b98"
+  integrity sha512-m357fRphDsx55xNCWGz0+Fwt1bHFA/8sry1I5pFrwL7N4Xj2rvlvpxiNeRIYxFJ+Z1nUUqBxFIsxut6D0X6Ltw==
   dependencies:
     csv.js "^1.0.7"
     papaparse "^5.1.0"
