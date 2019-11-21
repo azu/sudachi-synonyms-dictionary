@@ -21,7 +21,7 @@ jobs:
         uses: peter-evans/create-pull-request@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update sudashi-synonyms-dictionary.json
+          commit-message: Update sudachi-synonyms-dictionary.json
           author-email: azu@users.noreply.github.com
           author-name: azu
           title: '[Update] Sudashi synonyms dictionary'

@@ -1,1 +1,1 @@
-module.exports = require("./sudashi-synonyms-dictionary");
+module.exports = require("./sudachi-synonyms-dictionary");

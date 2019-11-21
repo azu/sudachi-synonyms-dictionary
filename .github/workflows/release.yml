@@ -7,7 +7,7 @@ on:
       - "!*"
     paths:
       - 'package.json'
-      - 'sudashi-synonyms-dictionary.json'
+      - 'sudachi-synonyms-dictionary.json'
 jobs:
   release:
     name: check version, add tag and release

@@ -1,4 +1,4 @@
-# sudashi-synonyms-dictionary
+# sudachi-synonyms-dictionary
 
 Sudashu's synonyms dictionary
 
@@ -10,12 +10,12 @@ It is a npm package for Sudachi's [synonyms dictionary](https://github.com/Works
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install sudashi-synonyms-dictionary
+    npm install sudachi-synonyms-dictionary
 
 ## Usage
 
 ```js 
-const dict = require("sudashi-synonyms-dictionary");
+const dict = require("sudachi-synonyms-dictionary");
 // dict is array
 console.log(dict);
 /*
@@ -83,14 +83,14 @@ For more details, see [sudashi-synonyms-parser](https://github.com/azu/sudashi-s
 
 ## Changelog
 
-See [Releases page](https://github.com/azu/sudashi-synonyms-dictionary/releases).
+See [Releases page](https://github.com/azu/sudachi-synonyms-dictionary/releases).
 
 ## Release Flow
 
 This repository has semi-automatic release flow:
 
 - [cron-update-dictionary.yml](.github/workflows/cron-update-dictionary.yml): If sudachi's dictionary is updated, submit Pull Request
-- [release.yml](.github/workflows/release.yml): If [sudashi-synonyms-dictionary.json](sudashi-synonyms-dictionary.json) is updated, publish new version to npm
+- [release.yml](.github/workflows/release.yml): If [sudachi-synonyms-dictionary.json](sudachi-synonyms-dictionary.json) is updated, publish new version to npm
 
 ## Running tests
 
@@ -102,7 +102,7 @@ Install devDependencies and Run `npm test`:
 
 Pull requests and stars are always welcome.
 
-For bugs and feature requests, [please create an issue](https://github.com/azu/sudashi-synonyms-dictionary/issues).
+For bugs and feature requests, [please create an issue](https://github.com/azu/sudachi-synonyms-dictionary/issues).
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`

@@ -1,5 +1,5 @@
 {
-  "name": "sudashi-synonyms-dictionary",
+  "name": "sudachi-synonyms-dictionary",
   "version": "3.0.0",
   "description": "sudashi's synonyms dictionary",
   "keywords": [
@@ -7,20 +7,20 @@
     "sudachi",
     "synonyms"
   ],
-  "homepage": "https://github.com/azu/sudashi-synonyms-dictionary",
+  "homepage": "https://github.com/azu/sudachi-synonyms-dictionary",
   "bugs": {
-    "url": "https://github.com/azu/sudashi-synonyms-dictionary/issues"
+    "url": "https://github.com/azu/sudachi-synonyms-dictionary/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/azu/sudashi-synonyms-dictionary.git"
+    "url": "https://github.com/azu/sudachi-synonyms-dictionary.git"
   },
   "license": "Apache-2.0",
   "author": "azu",
   "files": [
     "index.js",
     "index.d.ts",
-    "sudashi-synonyms-dictionary.json"
+    "sudachi-synonyms-dictionary.json"
   ],
   "main": "index.js",
   "types": "index.d.ts",
