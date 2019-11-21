@@ -19,16 +19,20 @@
   "author": "azu",
   "files": [
     "index.js",
+    "index.d.ts",
     "sudashi-synonyms-dictionary.json"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "update": "node update.js",
     "test": "node test/index.test.js"
   },
   "devDependencies": {
     "node-fetch": "^2.6.0",
-    "semver": "^6.3.0",
+    "semver": "^6.3.0"
+  },
+  "dependencies": {
     "sudashi-synonyms-parser": "^1.0.1"
   }
 }
