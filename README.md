@@ -79,7 +79,7 @@ console.log(dict);
 }, ...]
 ```
 
-For more details, see [sudashi-synonyms-parser](https://github.com/azu/sudashi-synonyms-parser).
+For more details, see [sudachi-synonyms-parser](https://github.com/azu/sudachi-synonyms-parser).
 
 ## Changelog
 
