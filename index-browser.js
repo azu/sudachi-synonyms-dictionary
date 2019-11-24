@@ -6,9 +6,6 @@ let cachedJSON = null;
  * @returns {Promise<SudachiSynonymsGroup[]>}
  */
 function fetchDictionary(options) {
-    if (options === undefined) {
-        throw new Error("sudachi-synonyms-dictionary: browser should set options.");
-    }
     // for browser that depended on `fetch` API
     // for browser hack
     // window["sudachi-synonyms-dictionary"] = "https://example.com/sudachi-synonyms-dictionary.json"
