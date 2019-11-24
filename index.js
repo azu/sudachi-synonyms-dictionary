@@ -2,7 +2,7 @@ let cachedJSON = null;
 
 function fetchDictionary(options) {
     // for browser that depended on `fetch` API
-    if (options) {
+    if (options && options.url) {
         if (cachedJSON) {
             return Promise.resolve(cachedJSON);
         }
