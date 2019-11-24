@@ -1,4 +1,4 @@
-declare type SudachiSynonymsGroup = {
+export declare type SudachiSynonymsGroup = {
     /**
      * 0 : グループ番号
      * 同義語として登録する見出しには、共通のグループ番号を付与します。 この番号は、ソース内で同義語の管理・識別に使用するため、一度発行したグループ番号は変更しません。 グループ番号は6桁の数字で表します。
@@ -6,7 +6,7 @@ declare type SudachiSynonymsGroup = {
     id: string;
     items: SudachiSynonyms[];
 };
-declare type SudachiSynonyms = {
+export declare type SudachiSynonyms = {
     /**
      * 1 : 体言/用言フラグ
      * 見出しが体言か用言かを管理・識別する情報です。省略された場合は"未定義"になります。
@@ -62,5 +62,12 @@ declare type SudachiSynonyms = {
      */
     midashi: string;
 };
-declare const SudachiSynonymsGroupList: readonly SudachiSynonymsGroup[];
-export = SudachiSynonymsGroupList
+
+export interface fetchDictionaryOptions {
+    url: string;
+}
+
+/**
+ * Fetch dictionary and return a Promise that resolve with dictionary object.
+ */
+export declare function fetchDictionary(options?: fetchDictionaryOptions): Promise<readonly SudachiSynonymsGroup[]>;

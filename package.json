@@ -1,6 +1,6 @@
 {
   "name": "sudachi-synonyms-dictionary",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "sudashi's synonyms dictionary",
   "keywords": [
     "dictionary",
@@ -24,6 +24,7 @@
   ],
   "main": "index.js",
   "types": "index.d.ts",
+  "browser": "index-browser.js",
   "scripts": {
     "update": "node update.js",
     "test": "node test/index.test.js"
