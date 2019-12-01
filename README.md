@@ -4,7 +4,7 @@ Sudashu's synonyms dictionary
 
 It is a npm package for Sudachi's [synonyms dictionary](https://github.com/WorksApplications/SudachiDict/blob/develop/docs/synonyms.md)
 
-- Source: 
+- Source: <https://raw.githubusercontent.com/WorksApplications/SudachiDict/develop/src/main/text/synonyms.txt>
 
 ## Install
 
