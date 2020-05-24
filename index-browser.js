@@ -9,7 +9,7 @@ function fetchDictionary(options) {
     // for browser that depended on `fetch` API
     // for browser hack
     // window["sudachi-synonyms-dictionary"] = "https://example.com/sudachi-synonyms-dictionary.json"
-    const dictionaryURL = options.url || window["sudachi-synonyms-dictionary"];
+    const dictionaryURL = options && options.url || window["sudachi-synonyms-dictionary"];
     if (!dictionaryURL) {
         throw new Error("sudachi-synonyms-dictionary: dictionary url is undefined.");
     }
