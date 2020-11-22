@@ -15,9 +15,10 @@ Install with [npm](https://www.npmjs.com/):
 ## Usage
 
 ```js 
-const dict = require("sudachi-synonyms-dictionary");
-// dict is array
-console.log(dict);
+import { fetchDictionary } from "sudachi-synonyms-dictionary";
+(async function () {
+    const dict = await fetchDictionary();
+    console.log(dict)
 /*
 [{
     "id": "000001",
@@ -77,6 +78,8 @@ console.log(dict);
         "midashi": "不確か"
     }]
 }, ...]
+*/
+})();
 ```
 
 For more details, see [sudachi-synonyms-parser](https://github.com/azu/sudachi-synonyms-parser).
