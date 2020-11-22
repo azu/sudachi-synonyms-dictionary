@@ -7,20 +7,20 @@ csv.js@^1.0.7:
   resolved "https://registry.yarnpkg.com/csv.js/-/csv.js-1.0.7.tgz#aca4de02bb2239e733f1173a8333ef845668212c"
   integrity sha512-Soyak0jeZSNTeaOMkRotL7o4bk5IeOUzPim4GSy1UyfB2PS2g1MKyeDFEuffe90TbZ6d0vZ0f34wOfrS+sd4VQ==
 
-node-fetch@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
-  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+node-fetch@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 papaparse@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-5.1.0.tgz#6228e8d96de99630ad017cf6522042319facc5eb"
   integrity sha512-3jEYMiCc8qN7V5ffi2BTS2mRauKxCu5AIED6DxbjnHhIm7OY7fzKYkndfPlHWaaKUDCTml5XTU6V+hiuxGlZuw==
 
-semver@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
-  integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+semver@^7.3.2:
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.2.tgz#604962b052b81ed0786aae84389ffba70ffd3938"
+  integrity sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
 
 sudachi-synonyms-parser@^1.0.3:
   version "1.0.3"

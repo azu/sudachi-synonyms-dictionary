@@ -30,8 +30,8 @@
     "test": "node test/index.test.js"
   },
   "devDependencies": {
-    "node-fetch": "^2.6.0",
-    "semver": "^6.3.0",
+    "node-fetch": "^2.6.1",
+    "semver": "^7.3.2",
     "sudachi-synonyms-parser": "^1.0.3"
   }
 }
