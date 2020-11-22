@@ -6,6 +6,12 @@ It is a npm package for Sudachi's [synonyms dictionary](https://github.com/Works
 
 - Source: <https://raw.githubusercontent.com/WorksApplications/SudachiDict/develop/src/main/text/synonyms.txt>
 
+## Feature
+
+- Work on browser
+- Use another dictionary url via `options`
+- Cached Dict
+
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
