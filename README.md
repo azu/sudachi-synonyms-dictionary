@@ -10,7 +10,7 @@ It is a npm package for Sudachi's [synonyms dictionary](https://github.com/Works
 
 - Work on browser
 - Use another dictionary url via `options`
-- Cached Dict
+- In-Memoery cached
 
 ## Install
 
