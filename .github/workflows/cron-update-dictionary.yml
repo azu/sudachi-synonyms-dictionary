@@ -20,15 +20,22 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update sudachi-synonyms-dictionary.json
-          author-email: azu@users.noreply.github.com
-          author-name: azu
+          token: ${{ secrets.PAT }}
+          commit-message: "feat(deps): Update dictionary"
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: update-dictionary
+          branch-suffix: timestamp
+          delete-branch: true
           title: '[Update] Sudashi synonyms dictionary'
           body: |
             New dictionary
             - [SudachiDict](https://github.com/WorksApplications/SudachiDict)
           labels: "Type: dictionary"
+          assignees: azu
+          reviewers: azu
+          draft: false
       - name: Check outputs
         run: |
           echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
