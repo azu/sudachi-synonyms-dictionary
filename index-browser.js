@@ -1,15 +1,15 @@
 let cachedJSON = null;
 
 /**
- * Fetch dictionary from `url` option or window["sudachi-synonyms-dictionary"]
+ * Fetch dictionary from `url` option or self["sudachi-synonyms-dictionary"]
  * @param options
  * @returns {Promise<SudachiSynonymsGroup[]>}
  */
 function fetchDictionary(options) {
     // for browser that depended on `fetch` API
     // for browser hack
-    // window["sudachi-synonyms-dictionary"] = "https://example.com/sudachi-synonyms-dictionary.json"
-    const dictionaryURL = options && options.url || window["sudachi-synonyms-dictionary"];
+    // self["sudachi-synonyms-dictionary"] = "https://example.com/sudachi-synonyms-dictionary.json"
+    const dictionaryURL = options && options.url || self["sudachi-synonyms-dictionary"];
     if (!dictionaryURL) {
         throw new Error("sudachi-synonyms-dictionary: dictionary url is undefined.");
     }
