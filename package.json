@@ -19,12 +19,16 @@
   "author": "azu",
   "files": [
     "index.js",
-    "index.d.ts",
+    "index.modules.js",
     "sudachi-synonyms-dictionary.json"
   ],
-  "main": "index.js",
-  "types": "index.d.ts",
-  "browser": "index-browser.js",
+  "main": "./index.js",
+  "module": "./index.module.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.module.js"
+  },
   "scripts": {
     "update": "node update.js",
     "test": "node test/index.test.js"
