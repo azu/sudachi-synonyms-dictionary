@@ -9,8 +9,6 @@ It is a npm package for Sudachi's [synonyms dictionary](https://github.com/Works
 ## Feature
 
 - Work on browser
-- Use another dictionary url via `options`
-- In-Memoery cached
 
 ## Install
 
