@@ -9,6 +9,7 @@ It is a npm package for Sudachi's [synonyms dictionary](https://github.com/Works
 ## Feature
 
 - Work on Browser(ESM) and Node.js(CommonJS)
+- Includes `sudachi-synonyms-dictionary.json` file
 
 ## Install
 
