@@ -1,5 +1,11 @@
 let cachedJSON = null;
-
+const getGlobalThis = () => {
+    if (typeof globalThis !== 'undefined') return globalThis;
+    if (typeof self !== 'undefined') return self;
+    if (typeof window !== 'undefined') return window;
+    if (typeof global !== 'undefined') return global;
+    throw new Error('Unable to locate global `this`');
+};
 /**
  * Fetch dictionary from `url` option or window["sudachi-synonyms-dictionary"]
  * @param options
@@ -9,7 +15,7 @@ function fetchDictionary(options) {
     // for browser that depended on `fetch` API
     // for browser hack
     // window["sudachi-synonyms-dictionary"] = "https://example.com/sudachi-synonyms-dictionary.json"
-    const dictionaryURL = options && options.url || window["sudachi-synonyms-dictionary"];
+    const dictionaryURL = options && options.url || getGlobalThis()["sudachi-synonyms-dictionary"];
     if (!dictionaryURL) {
         throw new Error("sudachi-synonyms-dictionary: dictionary url is undefined.");
     }
