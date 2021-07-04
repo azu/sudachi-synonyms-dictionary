@@ -3,6 +3,9 @@ on:
   schedule:
     # per a week
     - cron:  '0 0 * * 0'
+permissions:
+  contents: write
+  pull-requests: write
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest

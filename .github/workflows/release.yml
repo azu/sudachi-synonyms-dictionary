@@ -8,6 +8,8 @@ on:
     paths:
       - 'package.json'
       - 'sudachi-synonyms-dictionary.json'
+permissions:
+  contents: write
 jobs:
   release:
     name: check version, add tag and release
@@ -16,9 +18,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: 12.x
+          node-version: 14
           registry-url: 'https://registry.npmjs.org'
       - name: install can-npm-publish and dependencies
         run: |
@@ -28,7 +30,7 @@ jobs:
         run: npm run test
       - name: Publish
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} # git tag
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           REPO: ${{github.repository}}
           COMMIT: ${{github.sha}}
