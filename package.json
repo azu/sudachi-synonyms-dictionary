@@ -18,6 +18,7 @@
   "license": "Apache-2.0",
   "author": "azu",
   "files": [
+    "index.d.ts",
     "index.js",
     "index.modules.js",
     "sudachi-synonyms-dictionary.json"
