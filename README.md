@@ -1,6 +1,6 @@
 # sudachi-synonyms-dictionary
 
-Sudashu's synonyms dictionary
+Sudachi's synonyms dictionary
 
 It is a npm package for Sudachi's [synonyms dictionary](https://github.com/WorksApplications/SudachiDict/blob/develop/docs/synonyms.md)
 
