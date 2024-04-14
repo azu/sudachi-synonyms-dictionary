@@ -1,7 +1,6 @@
 const fs = require("fs");
 const util = require("util");
 const path = require("path");
-const fetch = require("node-fetch");
 const { parse } = require("sudachi-synonyms-parser");
 const semver = require("semver");
 const OUTPUT_ESM_PATH = path.join(__dirname, "index.module.js");
