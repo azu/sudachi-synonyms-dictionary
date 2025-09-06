@@ -1,0 +1,46 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      semver:
+        specifier: ^7.6.0
+        version: 7.7.2
+      sudachi-synonyms-parser:
+        specifier: ^1.0.3
+        version: 1.0.3
+
+packages:
+
+  csv.js@1.0.7:
+    resolution: {integrity: sha512-Soyak0jeZSNTeaOMkRotL7o4bk5IeOUzPim4GSy1UyfB2PS2g1MKyeDFEuffe90TbZ6d0vZ0f34wOfrS+sd4VQ==}
+    engines: {node: '>= 0.4.0'}
+
+  papaparse@5.5.3:
+    resolution: {integrity: sha512-5QvjGxYVjxO59MGU2lHVYpRWBBtKHnlIAcSe1uNFCkkptUh63NFRj0FJQm7nR67puEruUci/ZkjmEFrjCAyP4A==}
+
+  semver@7.7.2:
+    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  sudachi-synonyms-parser@1.0.3:
+    resolution: {integrity: sha512-UjDtqx+UuobfL+E34j7lcqmQKDPPZE34PMZozwDdUl90Dn6u8N20mxPRWwCNA5D/jPNApltwl1TBPSutq3sZsg==}
+
+snapshots:
+
+  csv.js@1.0.7: {}
+
+  papaparse@5.5.3: {}
+
+  semver@7.7.2: {}
+
+  sudachi-synonyms-parser@1.0.3:
+    dependencies:
+      csv.js: 1.0.7
+      papaparse: 5.5.3
