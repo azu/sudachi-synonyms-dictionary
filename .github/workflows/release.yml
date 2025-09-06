@@ -16,18 +16,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
-      - name: setup Node
-        uses: actions/setup-node@v2
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
-          node-version: 14
+          persist-credentials: false
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+      - name: setup Node
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: 22
           registry-url: 'https://registry.npmjs.org'
-      - name: install can-npm-publish and dependencies
+      - name: Ensure npm 11.5.1 or later is installed
         run: |
-          npm install --global can-npm-publish
-          yarn install
+          NPM_VERSION=$(npm -v)
+          echo "Current npm version: $NPM_VERSION"
+          if ! npx semver -r ">=11.5.1" "$NPM_VERSION"; then
+            echo "npm version $NPM_VERSION is too old. Installing latest npm..."
+            npm install -g npm@latest
+            echo "Updated npm version: $(npm -v)"
+          fi
+      - name: install can-pnpm-publish and dependencies
+        run: |
+          pnpm install --global can-pnpm-publish
+          pnpm install
       - name: test
-        run: npm run test
+        run: pnpm run test
       - name: Publish
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} # git tag
