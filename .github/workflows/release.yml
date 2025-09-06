@@ -36,9 +36,9 @@ jobs:
             npm install -g npm@latest
             echo "Updated npm version: $(npm -v)"
           fi
-      - name: install can-pnpm-publish and dependencies
+      - name: install can-npm-publish and dependencies
         run: |
-          pnpm install --global can-pnpm-publish
+          pnpm install --global can-npm-publish
           pnpm install
       - name: test
         run: pnpm run test
