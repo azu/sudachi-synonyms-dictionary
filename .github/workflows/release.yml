@@ -27,6 +27,15 @@ jobs:
         with:
           node-version: 22
           registry-url: 'https://registry.npmjs.org'
+      - name: Ensure npm 11.5.1 or later is installed
+        run: |
+          NPM_VERSION=$(npm -v)
+          echo "Current npm version: $NPM_VERSION"
+          if ! npx semver -r ">=11.5.1" "$NPM_VERSION"; then
+            echo "npm version $NPM_VERSION is too old. Installing latest npm..."
+            npm install -g npm@latest
+            echo "Updated npm version: $(npm -v)"
+          fi
       - name: install can-pnpm-publish and dependencies
         run: |
           pnpm install --global can-pnpm-publish
