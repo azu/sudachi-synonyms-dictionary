@@ -8,6 +8,7 @@ on:
     paths:
       - 'package.json'
       - 'sudachi-synonyms-dictionary.json'
+      - '.github/workflows/release.yml'
 permissions:
   contents: write
   id-token: write
