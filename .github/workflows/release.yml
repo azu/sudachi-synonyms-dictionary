@@ -10,6 +10,7 @@ on:
       - 'sudachi-synonyms-dictionary.json'
 permissions:
   contents: write
+  id-token: write
 jobs:
   release:
     name: check version, add tag and release
@@ -45,7 +46,7 @@ jobs:
       - name: Publish
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} # git tag
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
           REPO: ${{github.repository}}
           COMMIT: ${{github.sha}}
         run: ./release.sh
