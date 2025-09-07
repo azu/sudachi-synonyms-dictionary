@@ -23,5 +23,12 @@ curl -s -X POST $API_URL \
   "sha": "${COMMIT}"
 }
 EOS
-# release
+
+# publish to npm
 npm publish
+
+# Create GitHub Release
+gh release create "${TAG}" \
+  --repo "${REPO}" \
+  --title "${TAG}" \
+  --generate-notes
