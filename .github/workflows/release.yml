@@ -27,17 +27,8 @@ jobs:
       - name: setup Node
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
-          node-version: 22
+          node-version: 24
           registry-url: 'https://registry.npmjs.org'
-      - name: Ensure npm 11.5.1 or later is installed
-        run: |
-          NPM_VERSION=$(npm -v)
-          echo "Current npm version: $NPM_VERSION"
-          if ! npx semver -r ">=11.5.1" "$NPM_VERSION"; then
-            echo "npm version $NPM_VERSION is too old. Installing latest npm..."
-            npm install -g npm@latest
-            echo "Updated npm version: $(npm -v)"
-          fi
       - name: install can-npm-publish and dependencies
         run: |
           pnpm install --global can-npm-publish
